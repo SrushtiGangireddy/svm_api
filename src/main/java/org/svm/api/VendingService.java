@@ -43,6 +43,7 @@ public class VendingService {
                 balance = balance + (quantity*0.01f);
                 break;
         }
+        this.state = "Loaded your money.";
     }
 
     public void dispenseSoda() {
