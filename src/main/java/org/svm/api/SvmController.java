@@ -72,4 +72,11 @@ public class SvmController {
         response.put("Machine state", vendingService.getState());
         return response;
     }
+
+    @GetMapping(value = "/getAvailability")
+    public HashMap<String, Object> getAvailability() {
+        HashMap<String, Object> response = new HashMap<>();
+        response.put("Soda List", vendingService.getAllSodas());
+        return response;
+    }
 }
