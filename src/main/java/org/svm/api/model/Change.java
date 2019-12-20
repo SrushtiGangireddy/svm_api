@@ -35,6 +35,17 @@ public class Change {
         return this.dimes;
     }
 
+    @Override
+    public String toString() {
+        return "Change{" +
+                "dollars=" + dollars +
+                ", quarters=" + quarters +
+                ", dimes=" + dimes +
+                ", nickels=" + nickels +
+                ", pennies=" + pennies +
+                '}';
+    }
+
     public int getNickels() {
         return this.nickels;
     }
