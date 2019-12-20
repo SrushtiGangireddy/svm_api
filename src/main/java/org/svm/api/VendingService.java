@@ -67,6 +67,7 @@ public class VendingService {
                     state = "Enjoy your soda";
                 }
             } catch(Exception e) {
+                System.out.println(e);
                 state = "Please enter valid soda selection from the list";
             }
         }

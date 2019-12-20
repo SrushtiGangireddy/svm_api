@@ -8,7 +8,7 @@ public class Change {
     private int pennies;
 
     public Change(Float balance) {
-        pennies = Integer.parseInt(balance.toString().replace(".", ""));
+        pennies = Math.round(balance*100);
         dollars = pennies / 100;
         pennies %= 100;
         quarters = pennies / 25;
